@@ -5,29 +5,30 @@ import org.testng.annotations.*;
 
 public class PerANdPostConditionAnnotation {
 
-    @BeforeClass
+    @BeforeClass(alwaysRun = true)
     public void beforeClass(){
         System.out.println("I am before class method");
     }
 
-    @Test
+    @Test (groups = "smoke")
     public void testMethod(){
         System.out.println("I am a Test method");
     }
-    @Test
+    @Test (groups = "smoke")
     public void testMethod1(){
         System.out.println("I am a Test method 1 ");
     }
-    @BeforeMethod
+    @BeforeMethod(alwaysRun = true)
     public void beforeMethod(){
         System.out.println("I am before method");
     }
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void afterMethod(){
         System.out.println("I am after method");
     }
 
-    @AfterClass
+    @AfterClass(alwaysRun = true)
+
     public void afterClass(){
         System.out.println("I am after class method");
     }

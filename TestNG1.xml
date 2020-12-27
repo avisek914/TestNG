@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="All Test Classes">
+        <classes>
+            <class name="Class2.Hw"/>
+            <class name="Class2.SoftAssertion"/>
+            <class name="Class1.LoginTest"/>
+            <class name="Class1.PerANdPostConditionAnnotation"/>
+            <class name="Class3.softAssertionDemo"/>
+        </classes>
+    </test>
+</suite>
